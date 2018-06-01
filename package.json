@@ -5,7 +5,7 @@
   "main": "built/index.js",
   "types": "src/index.ts",
   "scripts": {
-    "prepare": "rm -rf built && tsc",
+    "post-install": "rm -rf built && tsc",
     "start": "tsc -w --outDir demo/built"
   },
   "repository": {
